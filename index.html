@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pulse Hunter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="main-menu">
+    <h1>🎮 Pulse Hunter</h1>
+    <button onclick="startGame()">▶ Play</button>
+    <button onclick="openShop()">🛒 Shop</button>
+    <p class="footer">© Electric Games 2025. All Rights Reserved.</p>
+  </div>
+
+
+  <div id="shop-menu" class="hidden">
+    <h2>🛒 Upgrades Shop</h2>
+    <p>Coins: <span id="shop-coins">0</span></p>
+    <button onclick="buyUpgrade(50)">+1 Laser Speed (50 coins)</button>
+    <button onclick="buyUpgrade(75)">+1 Move Speed (75 coins)</button>
+    <button onclick="goToMenu()">⬅ Back</button>
+  </div>
+
+
+  <canvas id="gameCanvas" class="hidden" width="800" height="600"></canvas>
+
+
+  <script src="game.js"></script>
+</body>
+</html>
